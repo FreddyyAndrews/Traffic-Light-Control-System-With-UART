@@ -1,0 +1,3281 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+
+/*
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+
+HEADER
+{
+	VERSION = 1;
+	TIME_UNIT = ns;
+	DATA_OFFSET = 0.0;
+	DATA_DURATION = 1000.0;
+	SIMULATION_TIME = 0.0;
+	GRID_PHASE = 0.0;
+	GRID_PERIOD = 0.0;
+	GRID_DUTY_CYCLE = 50;
+}
+
+SIGNAL("testing_bus_vlg_vec_tst|AddressBus")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = BUS;
+	WIDTH = 2;
+	LSB_INDEX = 0;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("testing_bus_vlg_vec_tst|AddressBus[1]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "testing_bus_vlg_vec_tst|AddressBus";
+}
+
+SIGNAL("testing_bus_vlg_vec_tst|AddressBus[0]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "testing_bus_vlg_vec_tst|AddressBus";
+}
+
+SIGNAL("testing_bus_vlg_vec_tst|BClk")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("testing_bus_vlg_vec_tst|DataBus")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = BUS;
+	WIDTH = 8;
+	LSB_INDEX = 0;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("testing_bus_vlg_vec_tst|DataBus[7]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "testing_bus_vlg_vec_tst|DataBus";
+}
+
+SIGNAL("testing_bus_vlg_vec_tst|DataBus[6]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "testing_bus_vlg_vec_tst|DataBus";
+}
+
+SIGNAL("testing_bus_vlg_vec_tst|DataBus[5]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "testing_bus_vlg_vec_tst|DataBus";
+}
+
+SIGNAL("testing_bus_vlg_vec_tst|DataBus[4]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "testing_bus_vlg_vec_tst|DataBus";
+}
+
+SIGNAL("testing_bus_vlg_vec_tst|DataBus[3]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "testing_bus_vlg_vec_tst|DataBus";
+}
+
+SIGNAL("testing_bus_vlg_vec_tst|DataBus[2]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "testing_bus_vlg_vec_tst|DataBus";
+}
+
+SIGNAL("testing_bus_vlg_vec_tst|DataBus[1]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "testing_bus_vlg_vec_tst|DataBus";
+}
+
+SIGNAL("testing_bus_vlg_vec_tst|DataBus[0]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "testing_bus_vlg_vec_tst|DataBus";
+}
+
+SIGNAL("testing_bus_vlg_vec_tst|RnotW")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("testing_bus_vlg_vec_tst|sel")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = BUS;
+	WIDTH = 2;
+	LSB_INDEX = 0;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("testing_bus_vlg_vec_tst|sel[1]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "testing_bus_vlg_vec_tst|sel";
+}
+
+SIGNAL("testing_bus_vlg_vec_tst|sel[0]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "testing_bus_vlg_vec_tst|sel";
+}
+
+SIGNAL("testing_bus_vlg_vec_tst|andgates")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("testing_bus_vlg_vec_tst|DoneTx")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("testing_bus_vlg_vec_tst|o_s1")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("testing_bus_vlg_vec_tst|o_s2")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("testing_bus_vlg_vec_tst|o_TDRE")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("testing_bus_vlg_vec_tst|startTx")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("testing_bus_vlg_vec_tst|TxD")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("testing_bus_vlg_vec_tst|sampler")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("testing_bus_vlg_vec_tst|i1|gnd")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("testing_bus_vlg_vec_tst|i1|vcc")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("testing_bus_vlg_vec_tst|i1|unknown")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("testing_bus_vlg_vec_tst|i1|devclrn")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("testing_bus_vlg_vec_tst|i1|devpor")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("testing_bus_vlg_vec_tst|i1|devoe")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("testing_bus_vlg_vec_tst|i1|sel[0]~input_o")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("testing_bus_vlg_vec_tst|i1|DoneTx~output_o")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("testing_bus_vlg_vec_tst|i1|o_TDRE~output_o")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("testing_bus_vlg_vec_tst|i1|TxD~output_o")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("testing_bus_vlg_vec_tst|i1|andgates~output_o")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("testing_bus_vlg_vec_tst|i1|startTx~output_o")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("testing_bus_vlg_vec_tst|i1|o_s1~output_o")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("testing_bus_vlg_vec_tst|i1|o_s2~output_o")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("testing_bus_vlg_vec_tst|i1|BClk~input_o")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("testing_bus_vlg_vec_tst|i1|BClk~inputclkctrl_outclk")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("testing_bus_vlg_vec_tst|i1|i_TDRE~input_o")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("testing_bus_vlg_vec_tst|i1|AddressBus[1]~input_o")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("testing_bus_vlg_vec_tst|i1|sel[1]~input_o")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("testing_bus_vlg_vec_tst|i1|RnotW~input_o")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("testing_bus_vlg_vec_tst|i1|AddressBus[0]~input_o")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("testing_bus_vlg_vec_tst|i1|inst4|inst3~0_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("testing_bus_vlg_vec_tst|i1|inst4|inst1|dff0|int_q~0_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("testing_bus_vlg_vec_tst|i1|inst4|inst5|enable_signal~combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("testing_bus_vlg_vec_tst|i1|inst4|inst1|dff0|int_q~q")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("testing_bus_vlg_vec_tst|i1|inst4|inst1|dff1|int_q~0_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("testing_bus_vlg_vec_tst|i1|inst4|inst1|dff1|int_q~q")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("testing_bus_vlg_vec_tst|i1|inst4|inst1|dff2|int_q~0_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("testing_bus_vlg_vec_tst|i1|inst4|inst1|dff2|int_q~1_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("testing_bus_vlg_vec_tst|i1|inst4|inst1|dff2|int_q~q")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("testing_bus_vlg_vec_tst|i1|inst4|inst1|dff3|int_q~0_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("testing_bus_vlg_vec_tst|i1|inst4|inst1|dff3|int_q~q")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("testing_bus_vlg_vec_tst|i1|inst4|inst|i_0~0_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("testing_bus_vlg_vec_tst|i1|inst4|inst|i_0~combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("testing_bus_vlg_vec_tst|i1|GResetBar~input_o")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("testing_bus_vlg_vec_tst|i1|GResetBar~inputclkctrl_outclk")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("testing_bus_vlg_vec_tst|i1|inst4|inst|dff0|int_q~q")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("testing_bus_vlg_vec_tst|i1|inst4|inst|dff1|int_q~0_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("testing_bus_vlg_vec_tst|i1|inst4|inst|dff1|int_q~q")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("testing_bus_vlg_vec_tst|i1|inst4|inst|inc_counter~0_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("testing_bus_vlg_vec_tst|i1|DataBus[2]~input_o")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("testing_bus_vlg_vec_tst|i1|inst4|inst4|bg|int_q~feeder_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("testing_bus_vlg_vec_tst|i1|inst4|inst4|bg|int_q~q")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("testing_bus_vlg_vec_tst|i1|DataBus[3]~input_o")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("testing_bus_vlg_vec_tst|i1|inst4|inst4|bf|int_q~q")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("testing_bus_vlg_vec_tst|i1|DataBus[4]~input_o")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("testing_bus_vlg_vec_tst|i1|inst4|inst4|be|int_q~q")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("testing_bus_vlg_vec_tst|i1|DataBus[5]~input_o")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("testing_bus_vlg_vec_tst|i1|inst4|inst4|bd|int_q~feeder_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("testing_bus_vlg_vec_tst|i1|inst4|inst4|bd|int_q~q")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("testing_bus_vlg_vec_tst|i1|DataBus[6]~input_o")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("testing_bus_vlg_vec_tst|i1|inst4|inst4|bc|int_q~feeder_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("testing_bus_vlg_vec_tst|i1|inst4|inst4|bc|int_q~q")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("testing_bus_vlg_vec_tst|i1|DataBus[7]~input_o")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("testing_bus_vlg_vec_tst|i1|inst4|inst4|bb|int_q~q")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("testing_bus_vlg_vec_tst|i1|inst4|inst5|mux7|y~combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("testing_bus_vlg_vec_tst|i1|inst4|inst5|dff7|int_q~q")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("testing_bus_vlg_vec_tst|i1|inst4|inst5|mux6|y~0_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("testing_bus_vlg_vec_tst|i1|inst4|inst5|dff6|int_q~q")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("testing_bus_vlg_vec_tst|i1|inst4|inst5|mux5|y~0_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("testing_bus_vlg_vec_tst|i1|inst4|inst5|dff5|int_q~q")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("testing_bus_vlg_vec_tst|i1|inst4|inst5|mux4|y~0_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("testing_bus_vlg_vec_tst|i1|inst4|inst5|dff4|int_q~q")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("testing_bus_vlg_vec_tst|i1|inst4|inst5|mux3|y~0_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("testing_bus_vlg_vec_tst|i1|inst4|inst5|dff3|int_q~q")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("testing_bus_vlg_vec_tst|i1|inst4|inst5|mux2|y~0_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("testing_bus_vlg_vec_tst|i1|inst4|inst5|dff2|int_q~q")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("testing_bus_vlg_vec_tst|i1|DataBus[1]~input_o")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("testing_bus_vlg_vec_tst|i1|inst4|inst4|bh|int_q~feeder_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("testing_bus_vlg_vec_tst|i1|inst4|inst4|bh|int_q~q")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("testing_bus_vlg_vec_tst|i1|inst4|inst5|mux1|y~0_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("testing_bus_vlg_vec_tst|i1|inst4|inst5|dff1|int_q~q")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("testing_bus_vlg_vec_tst|i1|DataBus[0]~input_o")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("testing_bus_vlg_vec_tst|i1|inst4|inst4|bi|int_q~feeder_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("testing_bus_vlg_vec_tst|i1|inst4|inst4|bi|int_q~q")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("testing_bus_vlg_vec_tst|i1|inst4|inst5|mux0|y~0_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("testing_bus_vlg_vec_tst|i1|inst4|inst5|dff0|int_q~q")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("testing_bus_vlg_vec_tst|i1|inst4|inst13|int_q~0_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("testing_bus_vlg_vec_tst|i1|inst4|inst13|int_q~q")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("testing_bus_vlg_vec_tst|i1|inst4|inst7~combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+TRANSITION_LIST("testing_bus_vlg_vec_tst|AddressBus[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("testing_bus_vlg_vec_tst|AddressBus[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("testing_bus_vlg_vec_tst|BClk")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+	}
+}
+
+TRANSITION_LIST("testing_bus_vlg_vec_tst|DataBus[7]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("testing_bus_vlg_vec_tst|DataBus[6]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("testing_bus_vlg_vec_tst|DataBus[5]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("testing_bus_vlg_vec_tst|DataBus[4]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("testing_bus_vlg_vec_tst|DataBus[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("testing_bus_vlg_vec_tst|DataBus[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("testing_bus_vlg_vec_tst|DataBus[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("testing_bus_vlg_vec_tst|DataBus[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("testing_bus_vlg_vec_tst|RnotW")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("testing_bus_vlg_vec_tst|sel[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("testing_bus_vlg_vec_tst|sel[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("testing_bus_vlg_vec_tst|andgates")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("testing_bus_vlg_vec_tst|DoneTx")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("testing_bus_vlg_vec_tst|o_s1")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("testing_bus_vlg_vec_tst|o_s2")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("testing_bus_vlg_vec_tst|o_TDRE")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("testing_bus_vlg_vec_tst|startTx")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("testing_bus_vlg_vec_tst|TxD")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 987.5;
+	}
+}
+
+TRANSITION_LIST("testing_bus_vlg_vec_tst|sampler")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+	}
+}
+
+TRANSITION_LIST("testing_bus_vlg_vec_tst|i1|gnd")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("testing_bus_vlg_vec_tst|i1|vcc")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("testing_bus_vlg_vec_tst|i1|unknown")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("testing_bus_vlg_vec_tst|i1|devclrn")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("testing_bus_vlg_vec_tst|i1|devpor")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("testing_bus_vlg_vec_tst|i1|devoe")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("testing_bus_vlg_vec_tst|i1|sel[0]~input_o")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("testing_bus_vlg_vec_tst|i1|DoneTx~output_o")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("testing_bus_vlg_vec_tst|i1|o_TDRE~output_o")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("testing_bus_vlg_vec_tst|i1|TxD~output_o")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 987.5;
+	}
+}
+
+TRANSITION_LIST("testing_bus_vlg_vec_tst|i1|andgates~output_o")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("testing_bus_vlg_vec_tst|i1|startTx~output_o")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("testing_bus_vlg_vec_tst|i1|o_s1~output_o")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("testing_bus_vlg_vec_tst|i1|o_s2~output_o")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("testing_bus_vlg_vec_tst|i1|BClk~input_o")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+	}
+}
+
+TRANSITION_LIST("testing_bus_vlg_vec_tst|i1|BClk~inputclkctrl_outclk")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+	}
+}
+
+TRANSITION_LIST("testing_bus_vlg_vec_tst|i1|i_TDRE~input_o")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL Z FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("testing_bus_vlg_vec_tst|i1|AddressBus[1]~input_o")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("testing_bus_vlg_vec_tst|i1|sel[1]~input_o")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("testing_bus_vlg_vec_tst|i1|RnotW~input_o")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("testing_bus_vlg_vec_tst|i1|AddressBus[0]~input_o")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("testing_bus_vlg_vec_tst|i1|inst4|inst3~0_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("testing_bus_vlg_vec_tst|i1|inst4|inst1|dff0|int_q~0_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("testing_bus_vlg_vec_tst|i1|inst4|inst5|enable_signal~combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("testing_bus_vlg_vec_tst|i1|inst4|inst1|dff0|int_q~q")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("testing_bus_vlg_vec_tst|i1|inst4|inst1|dff1|int_q~0_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("testing_bus_vlg_vec_tst|i1|inst4|inst1|dff1|int_q~q")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("testing_bus_vlg_vec_tst|i1|inst4|inst1|dff2|int_q~0_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("testing_bus_vlg_vec_tst|i1|inst4|inst1|dff2|int_q~1_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("testing_bus_vlg_vec_tst|i1|inst4|inst1|dff2|int_q~q")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("testing_bus_vlg_vec_tst|i1|inst4|inst1|dff3|int_q~0_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("testing_bus_vlg_vec_tst|i1|inst4|inst1|dff3|int_q~q")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("testing_bus_vlg_vec_tst|i1|inst4|inst|i_0~0_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("testing_bus_vlg_vec_tst|i1|inst4|inst|i_0~combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("testing_bus_vlg_vec_tst|i1|GResetBar~input_o")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL Z FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("testing_bus_vlg_vec_tst|i1|GResetBar~inputclkctrl_outclk")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("testing_bus_vlg_vec_tst|i1|inst4|inst|dff0|int_q~q")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("testing_bus_vlg_vec_tst|i1|inst4|inst|dff1|int_q~0_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("testing_bus_vlg_vec_tst|i1|inst4|inst|dff1|int_q~q")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("testing_bus_vlg_vec_tst|i1|inst4|inst|inc_counter~0_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("testing_bus_vlg_vec_tst|i1|DataBus[2]~input_o")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("testing_bus_vlg_vec_tst|i1|inst4|inst4|bg|int_q~feeder_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("testing_bus_vlg_vec_tst|i1|inst4|inst4|bg|int_q~q")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("testing_bus_vlg_vec_tst|i1|DataBus[3]~input_o")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("testing_bus_vlg_vec_tst|i1|inst4|inst4|bf|int_q~q")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("testing_bus_vlg_vec_tst|i1|DataBus[4]~input_o")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("testing_bus_vlg_vec_tst|i1|inst4|inst4|be|int_q~q")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("testing_bus_vlg_vec_tst|i1|DataBus[5]~input_o")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("testing_bus_vlg_vec_tst|i1|inst4|inst4|bd|int_q~feeder_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("testing_bus_vlg_vec_tst|i1|inst4|inst4|bd|int_q~q")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("testing_bus_vlg_vec_tst|i1|DataBus[6]~input_o")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("testing_bus_vlg_vec_tst|i1|inst4|inst4|bc|int_q~feeder_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("testing_bus_vlg_vec_tst|i1|inst4|inst4|bc|int_q~q")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("testing_bus_vlg_vec_tst|i1|DataBus[7]~input_o")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("testing_bus_vlg_vec_tst|i1|inst4|inst4|bb|int_q~q")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("testing_bus_vlg_vec_tst|i1|inst4|inst5|mux7|y~combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("testing_bus_vlg_vec_tst|i1|inst4|inst5|dff7|int_q~q")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("testing_bus_vlg_vec_tst|i1|inst4|inst5|mux6|y~0_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("testing_bus_vlg_vec_tst|i1|inst4|inst5|dff6|int_q~q")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("testing_bus_vlg_vec_tst|i1|inst4|inst5|mux5|y~0_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("testing_bus_vlg_vec_tst|i1|inst4|inst5|dff5|int_q~q")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("testing_bus_vlg_vec_tst|i1|inst4|inst5|mux4|y~0_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("testing_bus_vlg_vec_tst|i1|inst4|inst5|dff4|int_q~q")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("testing_bus_vlg_vec_tst|i1|inst4|inst5|mux3|y~0_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("testing_bus_vlg_vec_tst|i1|inst4|inst5|dff3|int_q~q")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("testing_bus_vlg_vec_tst|i1|inst4|inst5|mux2|y~0_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("testing_bus_vlg_vec_tst|i1|inst4|inst5|dff2|int_q~q")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("testing_bus_vlg_vec_tst|i1|DataBus[1]~input_o")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("testing_bus_vlg_vec_tst|i1|inst4|inst4|bh|int_q~feeder_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("testing_bus_vlg_vec_tst|i1|inst4|inst4|bh|int_q~q")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("testing_bus_vlg_vec_tst|i1|inst4|inst5|mux1|y~0_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("testing_bus_vlg_vec_tst|i1|inst4|inst5|dff1|int_q~q")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("testing_bus_vlg_vec_tst|i1|DataBus[0]~input_o")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("testing_bus_vlg_vec_tst|i1|inst4|inst4|bi|int_q~feeder_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("testing_bus_vlg_vec_tst|i1|inst4|inst4|bi|int_q~q")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("testing_bus_vlg_vec_tst|i1|inst4|inst5|mux0|y~0_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("testing_bus_vlg_vec_tst|i1|inst4|inst5|dff0|int_q~q")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("testing_bus_vlg_vec_tst|i1|inst4|inst13|int_q~0_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("testing_bus_vlg_vec_tst|i1|inst4|inst13|int_q~q")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 987.5;
+	}
+}
+
+TRANSITION_LIST("testing_bus_vlg_vec_tst|i1|inst4|inst7~combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 1000.0;
+	}
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "testing_bus_vlg_vec_tst|AddressBus";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 0;
+	TREE_LEVEL = 0;
+	CHILDREN = 1, 2;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "testing_bus_vlg_vec_tst|AddressBus[1]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 1;
+	TREE_LEVEL = 1;
+	PARENT = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "testing_bus_vlg_vec_tst|AddressBus[0]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 2;
+	TREE_LEVEL = 1;
+	PARENT = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "testing_bus_vlg_vec_tst|BClk";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 3;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "testing_bus_vlg_vec_tst|DataBus";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 4;
+	TREE_LEVEL = 0;
+	CHILDREN = 5, 6, 7, 8, 9, 10, 11, 12;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "testing_bus_vlg_vec_tst|DataBus[7]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 5;
+	TREE_LEVEL = 1;
+	PARENT = 4;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "testing_bus_vlg_vec_tst|DataBus[6]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 6;
+	TREE_LEVEL = 1;
+	PARENT = 4;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "testing_bus_vlg_vec_tst|DataBus[5]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 7;
+	TREE_LEVEL = 1;
+	PARENT = 4;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "testing_bus_vlg_vec_tst|DataBus[4]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 8;
+	TREE_LEVEL = 1;
+	PARENT = 4;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "testing_bus_vlg_vec_tst|DataBus[3]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 9;
+	TREE_LEVEL = 1;
+	PARENT = 4;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "testing_bus_vlg_vec_tst|DataBus[2]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 10;
+	TREE_LEVEL = 1;
+	PARENT = 4;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "testing_bus_vlg_vec_tst|DataBus[1]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 11;
+	TREE_LEVEL = 1;
+	PARENT = 4;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "testing_bus_vlg_vec_tst|DataBus[0]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 12;
+	TREE_LEVEL = 1;
+	PARENT = 4;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "testing_bus_vlg_vec_tst|RnotW";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 13;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "testing_bus_vlg_vec_tst|sel";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 14;
+	TREE_LEVEL = 0;
+	CHILDREN = 15, 16;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "testing_bus_vlg_vec_tst|sel[1]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 15;
+	TREE_LEVEL = 1;
+	PARENT = 14;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "testing_bus_vlg_vec_tst|sel[0]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 16;
+	TREE_LEVEL = 1;
+	PARENT = 14;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "testing_bus_vlg_vec_tst|andgates";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 17;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "testing_bus_vlg_vec_tst|DoneTx";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 18;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "testing_bus_vlg_vec_tst|o_s1";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 19;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "testing_bus_vlg_vec_tst|o_s2";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 20;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "testing_bus_vlg_vec_tst|o_TDRE";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 21;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "testing_bus_vlg_vec_tst|startTx";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 22;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "testing_bus_vlg_vec_tst|TxD";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 23;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "testing_bus_vlg_vec_tst|sampler";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 24;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "testing_bus_vlg_vec_tst|i1|gnd";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 25;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "testing_bus_vlg_vec_tst|i1|vcc";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 26;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "testing_bus_vlg_vec_tst|i1|unknown";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 27;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "testing_bus_vlg_vec_tst|i1|devclrn";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 28;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "testing_bus_vlg_vec_tst|i1|devpor";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 29;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "testing_bus_vlg_vec_tst|i1|devoe";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 30;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "testing_bus_vlg_vec_tst|i1|sel[0]~input_o";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 31;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "testing_bus_vlg_vec_tst|i1|DoneTx~output_o";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 32;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "testing_bus_vlg_vec_tst|i1|o_TDRE~output_o";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 33;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "testing_bus_vlg_vec_tst|i1|TxD~output_o";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 34;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "testing_bus_vlg_vec_tst|i1|andgates~output_o";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 35;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "testing_bus_vlg_vec_tst|i1|startTx~output_o";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 36;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "testing_bus_vlg_vec_tst|i1|o_s1~output_o";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 37;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "testing_bus_vlg_vec_tst|i1|o_s2~output_o";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 38;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "testing_bus_vlg_vec_tst|i1|BClk~input_o";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 39;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "testing_bus_vlg_vec_tst|i1|BClk~inputclkctrl_outclk";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 40;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "testing_bus_vlg_vec_tst|i1|i_TDRE~input_o";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 41;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "testing_bus_vlg_vec_tst|i1|AddressBus[1]~input_o";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 42;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "testing_bus_vlg_vec_tst|i1|sel[1]~input_o";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 43;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "testing_bus_vlg_vec_tst|i1|RnotW~input_o";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 44;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "testing_bus_vlg_vec_tst|i1|AddressBus[0]~input_o";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 45;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "testing_bus_vlg_vec_tst|i1|inst4|inst3~0_combout";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 46;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "testing_bus_vlg_vec_tst|i1|inst4|inst1|dff0|int_q~0_combout";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 47;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "testing_bus_vlg_vec_tst|i1|inst4|inst5|enable_signal~combout";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 48;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "testing_bus_vlg_vec_tst|i1|inst4|inst1|dff0|int_q~q";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 49;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "testing_bus_vlg_vec_tst|i1|inst4|inst1|dff1|int_q~0_combout";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 50;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "testing_bus_vlg_vec_tst|i1|inst4|inst1|dff1|int_q~q";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 51;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "testing_bus_vlg_vec_tst|i1|inst4|inst1|dff2|int_q~0_combout";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 52;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "testing_bus_vlg_vec_tst|i1|inst4|inst1|dff2|int_q~1_combout";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 53;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "testing_bus_vlg_vec_tst|i1|inst4|inst1|dff2|int_q~q";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 54;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "testing_bus_vlg_vec_tst|i1|inst4|inst1|dff3|int_q~0_combout";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 55;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "testing_bus_vlg_vec_tst|i1|inst4|inst1|dff3|int_q~q";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 56;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "testing_bus_vlg_vec_tst|i1|inst4|inst|i_0~0_combout";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 57;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "testing_bus_vlg_vec_tst|i1|inst4|inst|i_0~combout";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 58;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "testing_bus_vlg_vec_tst|i1|GResetBar~input_o";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 59;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "testing_bus_vlg_vec_tst|i1|GResetBar~inputclkctrl_outclk";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 60;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "testing_bus_vlg_vec_tst|i1|inst4|inst|dff0|int_q~q";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 61;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "testing_bus_vlg_vec_tst|i1|inst4|inst|dff1|int_q~0_combout";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 62;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "testing_bus_vlg_vec_tst|i1|inst4|inst|dff1|int_q~q";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 63;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "testing_bus_vlg_vec_tst|i1|inst4|inst|inc_counter~0_combout";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 64;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "testing_bus_vlg_vec_tst|i1|DataBus[2]~input_o";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 65;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "testing_bus_vlg_vec_tst|i1|inst4|inst4|bg|int_q~feeder_combout";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 66;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "testing_bus_vlg_vec_tst|i1|inst4|inst4|bg|int_q~q";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 67;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "testing_bus_vlg_vec_tst|i1|DataBus[3]~input_o";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 68;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "testing_bus_vlg_vec_tst|i1|inst4|inst4|bf|int_q~q";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 69;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "testing_bus_vlg_vec_tst|i1|DataBus[4]~input_o";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 70;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "testing_bus_vlg_vec_tst|i1|inst4|inst4|be|int_q~q";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 71;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "testing_bus_vlg_vec_tst|i1|DataBus[5]~input_o";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 72;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "testing_bus_vlg_vec_tst|i1|inst4|inst4|bd|int_q~feeder_combout";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 73;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "testing_bus_vlg_vec_tst|i1|inst4|inst4|bd|int_q~q";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 74;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "testing_bus_vlg_vec_tst|i1|DataBus[6]~input_o";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 75;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "testing_bus_vlg_vec_tst|i1|inst4|inst4|bc|int_q~feeder_combout";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 76;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "testing_bus_vlg_vec_tst|i1|inst4|inst4|bc|int_q~q";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 77;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "testing_bus_vlg_vec_tst|i1|DataBus[7]~input_o";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 78;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "testing_bus_vlg_vec_tst|i1|inst4|inst4|bb|int_q~q";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 79;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "testing_bus_vlg_vec_tst|i1|inst4|inst5|mux7|y~combout";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 80;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "testing_bus_vlg_vec_tst|i1|inst4|inst5|dff7|int_q~q";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 81;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "testing_bus_vlg_vec_tst|i1|inst4|inst5|mux6|y~0_combout";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 82;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "testing_bus_vlg_vec_tst|i1|inst4|inst5|dff6|int_q~q";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 83;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "testing_bus_vlg_vec_tst|i1|inst4|inst5|mux5|y~0_combout";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 84;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "testing_bus_vlg_vec_tst|i1|inst4|inst5|dff5|int_q~q";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 85;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "testing_bus_vlg_vec_tst|i1|inst4|inst5|mux4|y~0_combout";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 86;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "testing_bus_vlg_vec_tst|i1|inst4|inst5|dff4|int_q~q";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 87;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "testing_bus_vlg_vec_tst|i1|inst4|inst5|mux3|y~0_combout";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 88;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "testing_bus_vlg_vec_tst|i1|inst4|inst5|dff3|int_q~q";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 89;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "testing_bus_vlg_vec_tst|i1|inst4|inst5|mux2|y~0_combout";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 90;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "testing_bus_vlg_vec_tst|i1|inst4|inst5|dff2|int_q~q";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 91;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "testing_bus_vlg_vec_tst|i1|DataBus[1]~input_o";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 92;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "testing_bus_vlg_vec_tst|i1|inst4|inst4|bh|int_q~feeder_combout";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 93;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "testing_bus_vlg_vec_tst|i1|inst4|inst4|bh|int_q~q";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 94;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "testing_bus_vlg_vec_tst|i1|inst4|inst5|mux1|y~0_combout";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 95;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "testing_bus_vlg_vec_tst|i1|inst4|inst5|dff1|int_q~q";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 96;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "testing_bus_vlg_vec_tst|i1|DataBus[0]~input_o";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 97;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "testing_bus_vlg_vec_tst|i1|inst4|inst4|bi|int_q~feeder_combout";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 98;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "testing_bus_vlg_vec_tst|i1|inst4|inst4|bi|int_q~q";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 99;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "testing_bus_vlg_vec_tst|i1|inst4|inst5|mux0|y~0_combout";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 100;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "testing_bus_vlg_vec_tst|i1|inst4|inst5|dff0|int_q~q";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 101;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "testing_bus_vlg_vec_tst|i1|inst4|inst13|int_q~0_combout";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 102;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "testing_bus_vlg_vec_tst|i1|inst4|inst13|int_q~q";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 103;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "testing_bus_vlg_vec_tst|i1|inst4|inst7~combout";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 104;
+	TREE_LEVEL = 0;
+}
+;

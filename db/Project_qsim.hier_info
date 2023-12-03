@@ -1,0 +1,24 @@
+|testing_clk
+Bclkx8 <= baud_gen:inst.BclkX8
+clk => baud_gen:inst.Sysclk
+sel[0] => baud_gen:inst.Sel[0]
+sel[1] => baud_gen:inst.Sel[1]
+sel[2] => baud_gen:inst.Sel[2]
+Blck <= baud_gen:inst.Bclk
+
+
+|testing_clk|baud_gen:inst
+Sysclk => Clkdiv41.CLK
+Sysclk => ctr1[0].CLK
+Sysclk => ctr1[1].CLK
+Sysclk => ctr1[2].CLK
+Sysclk => ctr1[3].CLK
+Sysclk => ctr1[4].CLK
+rst_b => ~NO_FANOUT~
+Sel[0] => Mux0.IN2
+Sel[1] => Mux0.IN1
+Sel[2] => Mux0.IN0
+BclkX8 <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+Bclk <= ctr3[2].DB_MAX_OUTPUT_PORT_TYPE
+
+

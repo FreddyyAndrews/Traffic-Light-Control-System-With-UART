@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="Project_qsim">
+		<CBX_INST_ENTRY INSTANCE_NAME="|testing_clk|baud_gen:inst|lpm_mux:Mux0" CBX_FILE_NAME="mux_cqc.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

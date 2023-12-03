@@ -1,0 +1,195 @@
+$comment
+	File created using the following command:
+		vcd file Project.msim.vcd -direction
+$end
+$date
+	Tue Nov 28 16:11:35 2023
+$end
+$version
+	ModelSim Version 10.1d
+$end
+$timescale
+	1ps
+$end
+$scope module Tasinda_vlg_vec_tst $end
+$var reg 2 ! AddressBus [1:0] $end
+$var reg 1 " BClk $end
+$var reg 8 # DataBus [7:0] $end
+$var reg 1 $ Input_TDRE $end
+$var reg 1 % RnotW $end
+$var reg 2 & sel [1:0] $end
+$var wire 1 ' DoneTx $end
+$var wire 1 ( Output_TDRE $end
+$var wire 1 ) TxD $end
+$var wire 1 * sampler $end
+$scope module i1 $end
+$var wire 1 + gnd $end
+$var wire 1 , vcc $end
+$var wire 1 - unknown $end
+$var tri1 1 . devclrn $end
+$var tri1 1 / devpor $end
+$var tri1 1 0 devoe $end
+$var wire 1 1 sel[0]~input_o $end
+$var wire 1 2 TxD~output_o $end
+$var wire 1 3 DoneTx~output_o $end
+$var wire 1 4 Output_TDRE~output_o $end
+$var wire 1 5 BClk~input_o $end
+$var wire 1 6 BClk~inputclkctrl_outclk $end
+$var wire 1 7 DataBus[3]~input_o $end
+$var wire 1 8 inst|b2v_inst4|bf|int_q~feeder_combout $end
+$var wire 1 9 GReset~input_o $end
+$var wire 1 : GReset~inputclkctrl_outclk $end
+$var wire 1 ; AddressBus[0]~input_o $end
+$var wire 1 < RnotW~input_o $end
+$var wire 1 = AddressBus[1]~input_o $end
+$var wire 1 > sel[1]~input_o $end
+$var wire 1 ? inst|SYNTHESIZED_WIRE_18~0_combout $end
+$var wire 1 @ inst|b2v_inst4|bf|int_q~q $end
+$var wire 1 A Input_TDRE~input_o $end
+$var wire 1 B inst|b2v_inst1|dff0|int_q~0_combout $end
+$var wire 1 C inst|b2v_inst5|enable_signal~combout $end
+$var wire 1 D inst|b2v_inst1|dff0|int_q~q $end
+$var wire 1 E inst|b2v_inst1|dff1|int_q~1_combout $end
+$var wire 1 F inst|b2v_inst1|dff1|int_q~q $end
+$var wire 1 G inst|b2v_inst1|dff1|int_q~0_combout $end
+$var wire 1 H inst|b2v_inst1|dff2|int_q~0_combout $end
+$var wire 1 I inst|b2v_inst1|dff2|int_q~q $end
+$var wire 1 J inst|b2v_inst1|dff3|int_q~0_combout $end
+$var wire 1 K inst|b2v_inst1|dff3|int_q~q $end
+$var wire 1 L inst|b2v_inst|i_0~0_combout $end
+$var wire 1 M inst|b2v_inst|i_0~combout $end
+$var wire 1 N inst|b2v_inst|dff0|int_q~q $end
+$var wire 1 O inst|b2v_inst|dff1|int_q~0_combout $end
+$var wire 1 P inst|b2v_inst|dff1|int_q~q $end
+$var wire 1 Q DataBus[7]~input_o $end
+$var wire 1 R inst|b2v_inst4|bb|int_q~feeder_combout $end
+$var wire 1 S inst|b2v_inst4|bb|int_q~q $end
+$var wire 1 T inst|b2v_inst5|mux7|y~combout $end
+$var wire 1 U inst|b2v_inst5|dff7|int_q~q $end
+$var wire 1 V DataBus[6]~input_o $end
+$var wire 1 W inst|b2v_inst4|bc|int_q~q $end
+$var wire 1 X inst|b2v_inst5|mux6|y~0_combout $end
+$var wire 1 Y inst|b2v_inst5|dff6|int_q~q $end
+$var wire 1 Z DataBus[5]~input_o $end
+$var wire 1 [ inst|b2v_inst4|bd|int_q~feeder_combout $end
+$var wire 1 \ inst|b2v_inst4|bd|int_q~q $end
+$var wire 1 ] inst|b2v_inst5|mux5|y~0_combout $end
+$var wire 1 ^ inst|b2v_inst5|dff5|int_q~q $end
+$var wire 1 _ DataBus[4]~input_o $end
+$var wire 1 ` inst|b2v_inst4|be|int_q~feeder_combout $end
+$var wire 1 a inst|b2v_inst4|be|int_q~q $end
+$var wire 1 b inst|b2v_inst5|mux4|y~0_combout $end
+$var wire 1 c inst|b2v_inst5|dff4|int_q~q $end
+$var wire 1 d inst|b2v_inst5|mux3|y~0_combout $end
+$var wire 1 e inst|b2v_inst5|dff3|int_q~q $end
+$var wire 1 f DataBus[2]~input_o $end
+$var wire 1 g inst|b2v_inst4|bg|int_q~feeder_combout $end
+$var wire 1 h inst|b2v_inst4|bg|int_q~q $end
+$var wire 1 i inst|b2v_inst5|mux2|y~0_combout $end
+$var wire 1 j inst|b2v_inst5|dff2|int_q~q $end
+$var wire 1 k DataBus[1]~input_o $end
+$var wire 1 l inst|b2v_inst4|bh|int_q~feeder_combout $end
+$var wire 1 m inst|b2v_inst4|bh|int_q~q $end
+$var wire 1 n inst|b2v_inst5|mux1|y~0_combout $end
+$var wire 1 o inst|b2v_inst5|dff1|int_q~q $end
+$var wire 1 p DataBus[0]~input_o $end
+$var wire 1 q inst|b2v_inst4|bi|int_q~feeder_combout $end
+$var wire 1 r inst|b2v_inst4|bi|int_q~q $end
+$var wire 1 s inst|b2v_inst5|mux0|y~0_combout $end
+$var wire 1 t inst|b2v_inst5|dff0|int_q~q $end
+$var wire 1 u inst|b2v_inst13|int_q~0_combout $end
+$var wire 1 v inst|b2v_inst13|int_q~q $end
+$var wire 1 w inst|b2v_inst|inc_counter~0_combout $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 !
+0"
+b0 #
+1$
+0%
+b10 &
+1'
+0(
+0)
+x*
+0+
+1,
+x-
+1.
+1/
+10
+01
+02
+13
+04
+05
+06
+07
+08
+z9
+x:
+0;
+0<
+0=
+1>
+1?
+0@
+1A
+0B
+0C
+0D
+0E
+0F
+0G
+0H
+0I
+0J
+0K
+0L
+1M
+0N
+0O
+0P
+0Q
+0R
+0S
+0T
+0U
+0V
+0W
+0X
+0Y
+0Z
+0[
+0\
+0]
+0^
+0_
+0`
+0a
+0b
+0c
+0d
+0e
+0f
+0g
+0h
+0i
+0j
+0k
+0l
+0m
+0n
+0o
+0p
+0q
+0r
+0s
+0t
+1u
+0v
+0w
+$end

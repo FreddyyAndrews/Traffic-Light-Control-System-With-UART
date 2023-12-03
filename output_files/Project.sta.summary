@@ -1,0 +1,473 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'baud_gen:inst6|ctr3[2]'
+Slack : -3.077
+TNS   : -45.419
+
+Type  : Slow 1200mV 85C Model Setup 'clk_div_rami:inst1|clock_1Hz'
+Slack : -2.289
+TNS   : -8.957
+
+Type  : Slow 1200mV 85C Model Setup 'GClock'
+Slack : -1.667
+TNS   : -13.733
+
+Type  : Slow 1200mV 85C Model Setup 'BaudSel[0]'
+Slack : -1.265
+TNS   : -23.456
+
+Type  : Slow 1200mV 85C Model Setup 'baud_gen:inst6|Clkdiv41'
+Slack : -1.036
+TNS   : -5.238
+
+Type  : Slow 1200mV 85C Model Setup 'clk_div_rami:inst1|clock_100Khz_int'
+Slack : -0.594
+TNS   : -1.038
+
+Type  : Slow 1200mV 85C Model Setup 'clk_div_rami:inst1|clock_1Khz_int'
+Slack : -0.589
+TNS   : -1.044
+
+Type  : Slow 1200mV 85C Model Setup 'clk_div_rami:inst1|clock_1Mhz_int'
+Slack : -0.589
+TNS   : -1.039
+
+Type  : Slow 1200mV 85C Model Setup 'clk_div_rami:inst1|clock_100hz_int'
+Slack : -0.585
+TNS   : -1.032
+
+Type  : Slow 1200mV 85C Model Setup 'clk_div_rami:inst1|clock_10Khz_int'
+Slack : -0.579
+TNS   : -1.237
+
+Type  : Slow 1200mV 85C Model Setup 'clk_div_rami:inst1|clock_10Hz_int'
+Slack : -0.237
+TNS   : -0.611
+
+Type  : Slow 1200mV 85C Model Hold 'BaudSel[0]'
+Slack : -0.633
+TNS   : -0.633
+
+Type  : Slow 1200mV 85C Model Hold 'clk_div_rami:inst1|clock_100Khz_int'
+Slack : -0.442
+TNS   : -0.442
+
+Type  : Slow 1200mV 85C Model Hold 'clk_div_rami:inst1|clock_1Mhz_int'
+Slack : -0.424
+TNS   : -0.424
+
+Type  : Slow 1200mV 85C Model Hold 'clk_div_rami:inst1|clock_100hz_int'
+Slack : -0.369
+TNS   : -0.369
+
+Type  : Slow 1200mV 85C Model Hold 'clk_div_rami:inst1|clock_10Khz_int'
+Slack : -0.321
+TNS   : -0.321
+
+Type  : Slow 1200mV 85C Model Hold 'clk_div_rami:inst1|clock_1Khz_int'
+Slack : -0.319
+TNS   : -0.319
+
+Type  : Slow 1200mV 85C Model Hold 'GClock'
+Slack : 0.392
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'clk_div_rami:inst1|clock_10Hz_int'
+Slack : 0.402
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'baud_gen:inst6|ctr3[2]'
+Slack : 0.403
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'clk_div_rami:inst1|clock_1Hz'
+Slack : 0.403
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'baud_gen:inst6|Clkdiv41'
+Slack : 0.445
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'BaudSel[0]'
+Slack : -1.451
+TNS   : -8.954
+
+Type  : Slow 1200mV 85C Model Recovery 'baud_gen:inst6|ctr3[2]'
+Slack : -1.199
+TNS   : -9.188
+
+Type  : Slow 1200mV 85C Model Recovery 'clk_div_rami:inst1|clock_1Hz'
+Slack : -1.103
+TNS   : -7.700
+
+Type  : Slow 1200mV 85C Model Removal 'BaudSel[0]'
+Slack : 0.990
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'baud_gen:inst6|ctr3[2]'
+Slack : 1.382
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'clk_div_rami:inst1|clock_1Hz'
+Slack : 1.464
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'BaudSel[0]'
+Slack : -3.000
+TNS   : -49.260
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'GClock'
+Slack : -3.000
+TNS   : -24.845
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'baud_gen:inst6|ctr3[2]'
+Slack : -1.285
+TNS   : -38.550
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'baud_gen:inst6|Clkdiv41'
+Slack : -1.285
+TNS   : -10.280
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk_div_rami:inst1|clock_1Hz'
+Slack : -1.285
+TNS   : -8.995
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk_div_rami:inst1|clock_100Khz_int'
+Slack : -1.285
+TNS   : -5.140
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk_div_rami:inst1|clock_100hz_int'
+Slack : -1.285
+TNS   : -5.140
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk_div_rami:inst1|clock_10Hz_int'
+Slack : -1.285
+TNS   : -5.140
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk_div_rami:inst1|clock_10Khz_int'
+Slack : -1.285
+TNS   : -5.140
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk_div_rami:inst1|clock_1Khz_int'
+Slack : -1.285
+TNS   : -5.140
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk_div_rami:inst1|clock_1Mhz_int'
+Slack : -1.285
+TNS   : -5.140
+
+Type  : Slow 1200mV 0C Model Setup 'baud_gen:inst6|ctr3[2]'
+Slack : -2.811
+TNS   : -39.128
+
+Type  : Slow 1200mV 0C Model Setup 'clk_div_rami:inst1|clock_1Hz'
+Slack : -2.023
+TNS   : -7.773
+
+Type  : Slow 1200mV 0C Model Setup 'GClock'
+Slack : -1.404
+TNS   : -10.789
+
+Type  : Slow 1200mV 0C Model Setup 'BaudSel[0]'
+Slack : -1.078
+TNS   : -18.136
+
+Type  : Slow 1200mV 0C Model Setup 'baud_gen:inst6|Clkdiv41'
+Slack : -0.819
+TNS   : -3.980
+
+Type  : Slow 1200mV 0C Model Setup 'clk_div_rami:inst1|clock_100Khz_int'
+Slack : -0.432
+TNS   : -0.584
+
+Type  : Slow 1200mV 0C Model Setup 'clk_div_rami:inst1|clock_1Khz_int'
+Slack : -0.428
+TNS   : -0.581
+
+Type  : Slow 1200mV 0C Model Setup 'clk_div_rami:inst1|clock_1Mhz_int'
+Slack : -0.428
+TNS   : -0.580
+
+Type  : Slow 1200mV 0C Model Setup 'clk_div_rami:inst1|clock_100hz_int'
+Slack : -0.425
+TNS   : -0.580
+
+Type  : Slow 1200mV 0C Model Setup 'clk_div_rami:inst1|clock_10Khz_int'
+Slack : -0.419
+TNS   : -0.699
+
+Type  : Slow 1200mV 0C Model Setup 'clk_div_rami:inst1|clock_10Hz_int'
+Slack : -0.112
+TNS   : -0.237
+
+Type  : Slow 1200mV 0C Model Hold 'BaudSel[0]'
+Slack : -0.571
+TNS   : -0.602
+
+Type  : Slow 1200mV 0C Model Hold 'clk_div_rami:inst1|clock_100Khz_int'
+Slack : -0.326
+TNS   : -0.326
+
+Type  : Slow 1200mV 0C Model Hold 'clk_div_rami:inst1|clock_1Mhz_int'
+Slack : -0.311
+TNS   : -0.311
+
+Type  : Slow 1200mV 0C Model Hold 'clk_div_rami:inst1|clock_100hz_int'
+Slack : -0.248
+TNS   : -0.248
+
+Type  : Slow 1200mV 0C Model Hold 'clk_div_rami:inst1|clock_1Khz_int'
+Slack : -0.213
+TNS   : -0.213
+
+Type  : Slow 1200mV 0C Model Hold 'clk_div_rami:inst1|clock_10Khz_int'
+Slack : -0.210
+TNS   : -0.210
+
+Type  : Slow 1200mV 0C Model Hold 'GClock'
+Slack : 0.351
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'baud_gen:inst6|ctr3[2]'
+Slack : 0.353
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'clk_div_rami:inst1|clock_10Hz_int'
+Slack : 0.354
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'clk_div_rami:inst1|clock_1Hz'
+Slack : 0.354
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'baud_gen:inst6|Clkdiv41'
+Slack : 0.398
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'BaudSel[0]'
+Slack : -1.222
+TNS   : -6.993
+
+Type  : Slow 1200mV 0C Model Recovery 'baud_gen:inst6|ctr3[2]'
+Slack : -0.976
+TNS   : -7.460
+
+Type  : Slow 1200mV 0C Model Recovery 'clk_div_rami:inst1|clock_1Hz'
+Slack : -0.938
+TNS   : -6.497
+
+Type  : Slow 1200mV 0C Model Removal 'BaudSel[0]'
+Slack : 0.890
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'baud_gen:inst6|ctr3[2]'
+Slack : 1.251
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'clk_div_rami:inst1|clock_1Hz'
+Slack : 1.381
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'BaudSel[0]'
+Slack : -3.000
+TNS   : -49.260
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'GClock'
+Slack : -3.000
+TNS   : -24.845
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'baud_gen:inst6|ctr3[2]'
+Slack : -1.285
+TNS   : -38.550
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'baud_gen:inst6|Clkdiv41'
+Slack : -1.285
+TNS   : -10.280
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk_div_rami:inst1|clock_1Hz'
+Slack : -1.285
+TNS   : -8.995
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk_div_rami:inst1|clock_100Khz_int'
+Slack : -1.285
+TNS   : -5.140
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk_div_rami:inst1|clock_100hz_int'
+Slack : -1.285
+TNS   : -5.140
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk_div_rami:inst1|clock_10Hz_int'
+Slack : -1.285
+TNS   : -5.140
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk_div_rami:inst1|clock_10Khz_int'
+Slack : -1.285
+TNS   : -5.140
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk_div_rami:inst1|clock_1Khz_int'
+Slack : -1.285
+TNS   : -5.140
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk_div_rami:inst1|clock_1Mhz_int'
+Slack : -1.285
+TNS   : -5.140
+
+Type  : Fast 1200mV 0C Model Setup 'baud_gen:inst6|ctr3[2]'
+Slack : -1.028
+TNS   : -8.358
+
+Type  : Fast 1200mV 0C Model Setup 'clk_div_rami:inst1|clock_1Hz'
+Slack : -0.612
+TNS   : -2.297
+
+Type  : Fast 1200mV 0C Model Setup 'GClock'
+Slack : -0.288
+TNS   : -0.667
+
+Type  : Fast 1200mV 0C Model Setup 'BaudSel[0]'
+Slack : -0.113
+TNS   : -0.690
+
+Type  : Fast 1200mV 0C Model Setup 'baud_gen:inst6|Clkdiv41'
+Slack : 0.020
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'clk_div_rami:inst1|clock_100Khz_int'
+Slack : 0.216
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'clk_div_rami:inst1|clock_1Khz_int'
+Slack : 0.221
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'clk_div_rami:inst1|clock_1Mhz_int'
+Slack : 0.221
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'clk_div_rami:inst1|clock_100hz_int'
+Slack : 0.223
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'clk_div_rami:inst1|clock_10Khz_int'
+Slack : 0.224
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'clk_div_rami:inst1|clock_10Hz_int'
+Slack : 0.393
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'BaudSel[0]'
+Slack : -0.398
+TNS   : -0.398
+
+Type  : Fast 1200mV 0C Model Hold 'clk_div_rami:inst1|clock_10Khz_int'
+Slack : -0.332
+TNS   : -0.332
+
+Type  : Fast 1200mV 0C Model Hold 'clk_div_rami:inst1|clock_100Khz_int'
+Slack : -0.317
+TNS   : -0.317
+
+Type  : Fast 1200mV 0C Model Hold 'clk_div_rami:inst1|clock_1Mhz_int'
+Slack : -0.316
+TNS   : -0.316
+
+Type  : Fast 1200mV 0C Model Hold 'clk_div_rami:inst1|clock_100hz_int'
+Slack : -0.311
+TNS   : -0.311
+
+Type  : Fast 1200mV 0C Model Hold 'clk_div_rami:inst1|clock_1Khz_int'
+Slack : -0.311
+TNS   : -0.311
+
+Type  : Fast 1200mV 0C Model Hold 'GClock'
+Slack : 0.137
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'baud_gen:inst6|ctr3[2]'
+Slack : 0.181
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'clk_div_rami:inst1|clock_10Hz_int'
+Slack : 0.181
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'clk_div_rami:inst1|clock_1Hz'
+Slack : 0.182
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'baud_gen:inst6|Clkdiv41'
+Slack : 0.208
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'BaudSel[0]'
+Slack : -0.186
+TNS   : -0.186
+
+Type  : Fast 1200mV 0C Model Recovery 'clk_div_rami:inst1|clock_1Hz'
+Slack : -0.091
+TNS   : -0.545
+
+Type  : Fast 1200mV 0C Model Recovery 'baud_gen:inst6|ctr3[2]'
+Slack : -0.088
+TNS   : -0.516
+
+Type  : Fast 1200mV 0C Model Removal 'BaudSel[0]'
+Slack : 0.482
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'baud_gen:inst6|ctr3[2]'
+Slack : 0.645
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'clk_div_rami:inst1|clock_1Hz'
+Slack : 0.695
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'BaudSel[0]'
+Slack : -3.000
+TNS   : -45.984
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'GClock'
+Slack : -3.000
+TNS   : -21.057
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'baud_gen:inst6|ctr3[2]'
+Slack : -1.000
+TNS   : -30.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'baud_gen:inst6|Clkdiv41'
+Slack : -1.000
+TNS   : -8.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk_div_rami:inst1|clock_1Hz'
+Slack : -1.000
+TNS   : -7.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk_div_rami:inst1|clock_100Khz_int'
+Slack : -1.000
+TNS   : -4.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk_div_rami:inst1|clock_100hz_int'
+Slack : -1.000
+TNS   : -4.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk_div_rami:inst1|clock_10Hz_int'
+Slack : -1.000
+TNS   : -4.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk_div_rami:inst1|clock_10Khz_int'
+Slack : -1.000
+TNS   : -4.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk_div_rami:inst1|clock_1Khz_int'
+Slack : -1.000
+TNS   : -4.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk_div_rami:inst1|clock_1Mhz_int'
+Slack : -1.000
+TNS   : -4.000
+
+------------------------------------------------------------

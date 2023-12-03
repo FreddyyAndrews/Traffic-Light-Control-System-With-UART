@@ -1,0 +1,177 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all; 
+
+LIBRARY work;
+
+ENTITY TxVHDL IS 
+	PORT
+	(
+		GResetBar :  IN  STD_LOGIC;
+		BClk :  IN  STD_LOGIC;
+		i_TDRE :  IN  STD_LOGIC;
+		RnotW :  IN  STD_LOGIC;
+		AddressBus :  IN  STD_LOGIC_VECTOR(1 DOWNTO 0);
+		DataBus :  IN  STD_LOGIC_VECTOR(7 DOWNTO 0);
+		sel :  IN  STD_LOGIC_VECTOR(1 DOWNTO 0);
+		TxD :  OUT  STD_LOGIC;
+		DoneTx :  OUT  STD_LOGIC;
+		o_TDRE :  OUT  STD_LOGIC
+	);
+END TxVHDL;
+
+ARCHITECTURE bdf_type OF TxVHDL IS 
+
+COMPONENT tx_controller
+	PORT(GResetBar : IN STD_LOGIC;
+		 BClk : IN STD_LOGIC;
+		 startTx : IN STD_LOGIC;
+		 counter_3 : IN STD_LOGIC;
+		 TDRE : OUT STD_LOGIC;
+		 resetDFF : OUT STD_LOGIC;
+		 loadTSR : OUT STD_LOGIC;
+		 shiftTSR : OUT STD_LOGIC;
+		 enableFF : OUT STD_LOGIC;
+		 inc_counter : OUT STD_LOGIC;
+		 reset_counter : OUT STD_LOGIC;
+		 DoneTx : OUT STD_LOGIC
+	);
+END COMPONENT;
+
+COMPONENT four_bit_register_reset_increment
+	PORT(clk : IN STD_LOGIC;
+		 reset : IN STD_LOGIC;
+		 increment : IN STD_LOGIC;
+		 counter_3 : OUT STD_LOGIC;
+		 data_out : OUT STD_LOGIC_VECTOR(3 DOWNTO 0)
+	);
+END COMPONENT;
+
+COMPONENT endff_2
+	PORT(i_resetBar : IN STD_LOGIC;
+		 i_d : IN STD_LOGIC;
+		 i_enable : IN STD_LOGIC;
+		 i_clock : IN STD_LOGIC;
+		 o_q : OUT STD_LOGIC;
+		 o_qBar : OUT STD_LOGIC
+	);
+END COMPONENT;
+
+COMPONENT eightbitregister
+	PORT(i_resetBar : IN STD_LOGIC;
+		 i_load : IN STD_LOGIC;
+		 i_clock : IN STD_LOGIC;
+		 i_Value : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
+		 o_Value : OUT STD_LOGIC_VECTOR(7 DOWNTO 0)
+	);
+END COMPONENT;
+
+COMPONENT eight_bit_right_shift_register
+	PORT(load : IN STD_LOGIC;
+		 serial_input : IN STD_LOGIC;
+		 shift_right : IN STD_LOGIC;
+		 clk : IN STD_LOGIC;
+		 parralel_input : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
+		 right_output : OUT STD_LOGIC
+	);
+END COMPONENT;
+
+SIGNAL	counter_out :  STD_LOGIC_VECTOR(3 DOWNTO 0);
+SIGNAL	SYNTHESIZED_WIRE_0 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_1 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_2 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_3 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_4 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_5 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_6 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_7 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_8 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_18 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_10 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_11 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_12 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_13 :  STD_LOGIC_VECTOR(7 DOWNTO 0);
+SIGNAL	SYNTHESIZED_WIRE_14 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_15 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_17 :  STD_LOGIC;
+
+
+BEGIN 
+DoneTx <= SYNTHESIZED_WIRE_14;
+SYNTHESIZED_WIRE_11 <= '1';
+
+
+
+b2v_inst : tx_controller
+PORT MAP(GResetBar => GResetBar,
+		 BClk => BClk,
+		 startTx => SYNTHESIZED_WIRE_0,
+		 counter_3 => counter_out(3),
+		 TDRE => o_TDRE,
+		 resetDFF => SYNTHESIZED_WIRE_17,
+		 loadTSR => SYNTHESIZED_WIRE_10,
+		 shiftTSR => SYNTHESIZED_WIRE_12,
+		 enableFF => SYNTHESIZED_WIRE_5,
+		 inc_counter => SYNTHESIZED_WIRE_2,
+		 reset_counter => SYNTHESIZED_WIRE_1,
+		 DoneTx => SYNTHESIZED_WIRE_14);
+
+
+b2v_inst1 : four_bit_register_reset_increment
+PORT MAP(clk => BClk,
+		 reset => SYNTHESIZED_WIRE_1,
+		 increment => SYNTHESIZED_WIRE_2,
+		 data_out => counter_out);
+
+
+SYNTHESIZED_WIRE_8 <= NOT(RnotW);
+
+
+
+b2v_inst13 : endff_2
+PORT MAP(i_resetBar => SYNTHESIZED_WIRE_3,
+		 i_d => SYNTHESIZED_WIRE_4,
+		 i_enable => SYNTHESIZED_WIRE_5,
+		 i_clock => BClk,
+		 o_q => TxD);
+
+
+SYNTHESIZED_WIRE_7 <= NOT(AddressBus(1));
+
+
+
+SYNTHESIZED_WIRE_6 <= NOT(AddressBus(0));
+
+
+
+SYNTHESIZED_WIRE_18 <= SYNTHESIZED_WIRE_6 AND SYNTHESIZED_WIRE_7 AND sel(1) AND SYNTHESIZED_WIRE_8;
+
+
+b2v_inst4 : eightbitregister
+PORT MAP(i_resetBar => GResetBar,
+		 i_load => SYNTHESIZED_WIRE_18,
+		 i_clock => BClk,
+		 i_Value => DataBus,
+		 o_Value => SYNTHESIZED_WIRE_13);
+
+
+b2v_inst5 : eight_bit_right_shift_register
+PORT MAP(load => SYNTHESIZED_WIRE_10,
+		 serial_input => SYNTHESIZED_WIRE_11,
+		 shift_right => SYNTHESIZED_WIRE_12,
+		 clk => BClk,
+		 parralel_input => SYNTHESIZED_WIRE_13,
+		 right_output => SYNTHESIZED_WIRE_15);
+
+
+SYNTHESIZED_WIRE_4 <= SYNTHESIZED_WIRE_14 OR SYNTHESIZED_WIRE_15;
+
+
+SYNTHESIZED_WIRE_0 <= SYNTHESIZED_WIRE_18 AND i_TDRE;
+
+
+
+SYNTHESIZED_WIRE_3 <= NOT(SYNTHESIZED_WIRE_17);
+
+
+
+END bdf_type;
