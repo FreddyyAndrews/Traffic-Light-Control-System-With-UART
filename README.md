@@ -36,7 +36,7 @@ In essence, the receiver remains in an idle state (state A) as long as RxD is hi
 To reduce complexity a one-hot encoding was used for the receiver removing the requirement of k-maps to implement design equations. In short, the input to each D Flip-Flop used for state representation is a combination of the previous state and the input signals. Figure 3 shows the design equations. For example, the input to D Flip-Flop 0 which represents state A is high when state A is the previous state and the idle bit is maintained or if state B is the previous state and the stop bit ends prematurely or if one of the loading states is the previous state. This corresponds to the state diagram.
 <div  align="center"style="font-size:30px;">
 
-![Receiver Design Equations](/Assets/receiver_design_equations.png "Figure 3: Design equations for receiver states")
+![Receiver Design Equations](/Assets/receiver_equations.png "Figure 3: Design equations for receiver states")
 
 </div>
 
