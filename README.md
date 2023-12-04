@@ -47,7 +47,7 @@ To reduce complexity a one-hot encoding was used for the receiver removing the r
 ![Receiver Waveform](/Assets/receiver_waveform.png "Figure 4: Waveform Simulation Results of Receiver ")
 
 </div>
-Figure 12 shows the working receiver receiving the byte 01101111. It begins in the idle state and then acknowledges the start bit after four clock pulses. It then shifts the value of RxD into the buffer register every eight clock cycles as is shown by the shift signal. After eight bits have been accepted the receiver signals that the buffer register is full with RDRF and the buffer register is loaded into the output register which is the signal RDR_out.
+Figure 4 shows the working receiver receiving the byte 01101111. It begins in the idle state and then acknowledges the start bit after four clock pulses. It then shifts the value of RxD into the buffer register every eight clock cycles as is shown by the shift signal. After eight bits have been accepted the receiver signals that the buffer register is full with RDRF and the buffer register is loaded into the output register which is the signal RDR_out.
 
 ---
 
@@ -105,7 +105,7 @@ This waveform was the successful transmission of a random sequence of five 8-bit
 
 [1] R. Keim, "UART Baud Rate: How Accurate Does It Need to Be?," All About Circuits, January 25, 2017. [Online]. Available: https://www.allaboutcircuits.com/technical-articles/the-uart-baud-rate-clock-how-accurate-does-it-need-to-be/. [Accessed: 29-11-2023].
 
-[2] Terasic Technologies, "DE2-115 User Manual," V2.3, [Online]. Available: [https://www.terasic.com.tw/attachment/archive/502/DE2_115_User_manual.pdf]. [Accessed: 29-11-2023].# Frederick Andrews and Jad Mghabghab's Final Project for CEG3155 (Digital Systems II)
+[2] Terasic Technologies, "DE2-115 User Manual," V2.3, [Online]. Available: [https://www.terasic.com.tw/attachment/archive/502/DE2_115_User_manual.pdf]. [Accessed: 29-11-2023].
 
 <div  align="center"style="font-size:30px;">
 
